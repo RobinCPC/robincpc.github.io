@@ -2,6 +2,7 @@
 title: Set up My Hexo Blog
 date: 2022-11-23 15:54:06
 tags:
+cover: false
 ---
 
 ## Install Hexo and setting
