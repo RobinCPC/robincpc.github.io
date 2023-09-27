@@ -192,7 +192,7 @@ Module['FS_createPath']('/', 'Ini', true, true);
   }
 
  }
- loadPackage({"files": [{"start": 0, "audio": 0, "end": 43912, "filename": "/fonts/Cousine-Regular.ttf"}, {"start": 43912, "audio": 0, "end": 233956, "filename": "/fonts/DroidSans.ttf"}, {"start": 233956, "audio": 0, "end": 250804, "filename": "/fonts/Karla-Regular.ttf"}, {"start": 250804, "audio": 0, "end": 292012, "filename": "/fonts/ProggyClean.ttf"}, {"start": 292012, "audio": 0, "end": 327668, "filename": "/fonts/ProggyTiny.ttf"}, {"start": 327668, "audio": 0, "end": 490256, "filename": "/fonts/Roboto-Medium.ttf"}, {"start": 490256, "audio": 0, "end": 504048, "filename": "/fonts/binary_to_compressed_c.cpp"}, {"start": 504048, "audio": 0, "end": 505019, "filename": "/Ini/imgui_base.ini"}, {"start": 505019, "audio": 0, "end": 505972, "filename": "/Ini/imgui_base0.ini"}], "remote_package_size": 505972, "package_uuid": "0c552bce-55d1-4299-af71-152d7dc4415a"});
+ loadPackage({"files": [{"start": 0, "audio": 0, "end": 43912, "filename": "/fonts/Cousine-Regular.ttf"}, {"start": 43912, "audio": 0, "end": 233956, "filename": "/fonts/DroidSans.ttf"}, {"start": 233956, "audio": 0, "end": 250804, "filename": "/fonts/Karla-Regular.ttf"}, {"start": 250804, "audio": 0, "end": 292012, "filename": "/fonts/ProggyClean.ttf"}, {"start": 292012, "audio": 0, "end": 327668, "filename": "/fonts/ProggyTiny.ttf"}, {"start": 327668, "audio": 0, "end": 490256, "filename": "/fonts/Roboto-Medium.ttf"}, {"start": 490256, "audio": 0, "end": 504048, "filename": "/fonts/binary_to_compressed_c.cpp"}, {"start": 504048, "audio": 0, "end": 505020, "filename": "/Ini/imgui_base.ini"}, {"start": 505020, "audio": 0, "end": 505973, "filename": "/Ini/imgui_base0.ini"}], "remote_package_size": 505973, "package_uuid": "f543b0b2-68a2-40e1-8b15-6780a40306b1"});
 
 })();
 
@@ -1387,11 +1387,11 @@ function updateGlobalBufferAndViews(buf) {
 }
 
 var STATIC_BASE = 1024,
-    STACK_BASE = 5383552,
+    STACK_BASE = 5383616,
     STACKTOP = STACK_BASE,
-    STACK_MAX = 140672,
-    DYNAMIC_BASE = 5383552,
-    DYNAMICTOP_PTR = 140512;
+    STACK_MAX = 140736,
+    DYNAMIC_BASE = 5383616,
+    DYNAMICTOP_PTR = 140576;
 
 assert(STACK_BASE % 16 === 0, 'stack must start aligned');
 assert(DYNAMIC_BASE % 16 === 0, 'heap must start aligned');
@@ -1908,7 +1908,7 @@ var ASM_CONSTS = [];
 
 
 
-// STATICTOP = STATIC_BASE + 139648;
+// STATICTOP = STATIC_BASE + 139712;
 /* global initializers */  __ATINIT__.push({ func: function() { ___wasm_call_ctors() } });
 
 
@@ -4569,7 +4569,7 @@ var ASM_CONSTS = [];
     }
 
   function _emscripten_get_sbrk_ptr() {
-      return 140512;
+      return 140576;
     }
 
   function _emscripten_memcpy_big(dest, src, num) {
@@ -7447,7 +7447,7 @@ var ASM_CONSTS = [];
     }
 
   
-  var ___tm_timezone=(stringToUTF8("GMT", 140576, 4), 140576);function _gmtime_r(time, tmPtr) {
+  var ___tm_timezone=(stringToUTF8("GMT", 140640, 4), 140640);function _gmtime_r(time, tmPtr) {
       var date = new Date(HEAP32[((time)>>2)]*1000);
       HEAP32[((tmPtr)>>2)]=date.getUTCSeconds();
       HEAP32[(((tmPtr)+(4))>>2)]=date.getUTCMinutes();
