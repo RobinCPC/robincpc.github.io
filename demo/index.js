@@ -192,7 +192,7 @@ Module['FS_createPath']('/', 'Ini', true, true);
   }
 
  }
- loadPackage({"files": [{"start": 0, "audio": 0, "end": 43912, "filename": "/fonts/Cousine-Regular.ttf"}, {"start": 43912, "audio": 0, "end": 233956, "filename": "/fonts/DroidSans.ttf"}, {"start": 233956, "audio": 0, "end": 250804, "filename": "/fonts/Karla-Regular.ttf"}, {"start": 250804, "audio": 0, "end": 292012, "filename": "/fonts/ProggyClean.ttf"}, {"start": 292012, "audio": 0, "end": 327668, "filename": "/fonts/ProggyTiny.ttf"}, {"start": 327668, "audio": 0, "end": 490256, "filename": "/fonts/Roboto-Medium.ttf"}, {"start": 490256, "audio": 0, "end": 504048, "filename": "/fonts/binary_to_compressed_c.cpp"}, {"start": 504048, "audio": 0, "end": 505020, "filename": "/Ini/imgui_base.ini"}, {"start": 505020, "audio": 0, "end": 505973, "filename": "/Ini/imgui_base0.ini"}], "remote_package_size": 505973, "package_uuid": "f461a7c1-033c-487b-816a-276f683c8635"});
+ loadPackage({"files": [{"start": 0, "audio": 0, "end": 43912, "filename": "/fonts/Cousine-Regular.ttf"}, {"start": 43912, "audio": 0, "end": 233956, "filename": "/fonts/DroidSans.ttf"}, {"start": 233956, "audio": 0, "end": 250804, "filename": "/fonts/Karla-Regular.ttf"}, {"start": 250804, "audio": 0, "end": 292012, "filename": "/fonts/ProggyClean.ttf"}, {"start": 292012, "audio": 0, "end": 327668, "filename": "/fonts/ProggyTiny.ttf"}, {"start": 327668, "audio": 0, "end": 490256, "filename": "/fonts/Roboto-Medium.ttf"}, {"start": 490256, "audio": 0, "end": 504048, "filename": "/fonts/binary_to_compressed_c.cpp"}, {"start": 504048, "audio": 0, "end": 505020, "filename": "/Ini/imgui_base.ini"}, {"start": 505020, "audio": 0, "end": 505973, "filename": "/Ini/imgui_base0.ini"}], "remote_package_size": 505973, "package_uuid": "ef22911e-a7ac-4d4c-a2d1-63bd09746b57"});
 
 })();
 
@@ -782,8 +782,8 @@ var wasmMemory;
 // In the wasm backend, we polyfill the WebAssembly object,
 // so this creates a (non-native-wasm) table for us.
 var wasmTable = new WebAssembly.Table({
-  'initial': 162,
-  'maximum': 162 + 0,
+  'initial': 163,
+  'maximum': 163 + 0,
   'element': 'anyfunc'
 });
 
@@ -1387,11 +1387,11 @@ function updateGlobalBufferAndViews(buf) {
 }
 
 var STATIC_BASE = 1024,
-    STACK_BASE = 5384544,
+    STACK_BASE = 5384560,
     STACKTOP = STACK_BASE,
-    STACK_MAX = 141664,
-    DYNAMIC_BASE = 5384544,
-    DYNAMICTOP_PTR = 141504;
+    STACK_MAX = 141680,
+    DYNAMIC_BASE = 5384560,
+    DYNAMICTOP_PTR = 141520;
 
 assert(STACK_BASE % 16 === 0, 'stack must start aligned');
 assert(DYNAMIC_BASE % 16 === 0, 'heap must start aligned');
@@ -1908,7 +1908,7 @@ var ASM_CONSTS = [];
 
 
 
-// STATICTOP = STATIC_BASE + 140640;
+// STATICTOP = STATIC_BASE + 140656;
 /* global initializers */  __ATINIT__.push({ func: function() { ___wasm_call_ctors() } });
 
 
@@ -4569,7 +4569,7 @@ var ASM_CONSTS = [];
     }
 
   function _emscripten_get_sbrk_ptr() {
-      return 141504;
+      return 141520;
     }
 
   function _emscripten_memcpy_big(dest, src, num) {
@@ -7447,7 +7447,7 @@ var ASM_CONSTS = [];
     }
 
   
-  var ___tm_timezone=(stringToUTF8("GMT", 141568, 4), 141568);function _gmtime_r(time, tmPtr) {
+  var ___tm_timezone=(stringToUTF8("GMT", 141584, 4), 141584);function _gmtime_r(time, tmPtr) {
       var date = new Date(HEAP32[((time)>>2)]*1000);
       HEAP32[((tmPtr)>>2)]=date.getUTCSeconds();
       HEAP32[(((tmPtr)+(4))>>2)]=date.getUTCMinutes();
